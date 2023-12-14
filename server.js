@@ -1,4 +1,4 @@
-const port = 1880;
+const port = 80;
 
 let app    = require('express')();
 let server = app.listen(port);
@@ -58,9 +58,5 @@ app.post('/sav',(req,res) => {
     let msg = req.body.msg;
     res.send("Sve ok2");
              })
-             console.log('listening to port 1880');
-/*
-app.listen(1880,() => {
-      console.log('listening to port 1880');
-               })
-               */
+             console.log('listening to port 80');
+
